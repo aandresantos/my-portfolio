@@ -5,69 +5,74 @@
 }
 body{
     background: #f7f7ef !important;
+    min-height: 100vh;
 }
 
 /*header*/
 
 #fixedbar{
     padding: 0;
-    background: #2193b0;  
+    color: #001d35 !important;
+    background:transparent;
 }
-#fixedbar ul li{
+#fixedbar ul li {
     padding: 10px;
-    
     text-align: center;
+    text-decoration: none;
     font-weight: 700;
-
+    
+    color: #001d35 !important;
     transition: .30s;
+
 }
 #fixedbar  ul li:hover{
-
+    border-radius: 10px;    
+    background: rgb(2, 23, 70);
+}
+#fixedbar a{
+    color: rgb(2, 23, 70) !important;
+}
+#fixedbar ul li a:hover{
+    color: azure !important;
+}
+#fixedbar .home{
+    background: rgb(2, 23, 70);
     border-radius: 10px;
-    color: #011627 !important;
-    background: rgba(255, 251, 215, 0.5)/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    color: azure !important;
+}
+#fixedbar .home a{
+    color: azure !important;
+}
+#fixedbar .home:hover{
+    background: azure !important;
+}
+#fixedbar .home a:hover{
+    color: rgb(2, 23, 70)!important;
 }
 
 /*banner*/
 #banner{
-   
-    margin-top: 100px;
+    position: relative;
+    margin-top: 11  vh;
+    padding: 30vh;
+    padding-bottom: 55vh;
+    background: linear-gradient(45deg, #001E6C , #035397, #5089C6 ,rgb(247, 227, 116), #f0ffff);
+    background-size: 300% 300%;
+    animation: color-banner 10s ease infinite;
 }
-#banner path{
-    fill: transparent;
-    stroke: 20;
-    stroke:#2193b0;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 0;
-
-    transition: 2s;
-    animation: anime-banner 3s forwards;
-}
-@keyframes anime-banner
-{
+@keyframes color-banner{
     0%{
-        stroke-dashoffset: 0;
+        background-position: 0% 50%;
     }
-    40%{
-        stroke-dashoffset: 1560;
-    }
-    80%{
-        stroke-dashoffset: 3120;
-        fill: transparent;
+    50%{
+        background-position: 100% 50%;
     }
     100%{
-        stroke-dashoffset: 3120;
-        fill: #2193b0;
+        background-position: 0% 50%;
     }
 }
 
-#banner .container{
-    position: absolute;
-    bottom: 450px ;
-    text-align: center;
-    justify-content: center;
-}
+
 
 
 
@@ -115,7 +120,7 @@ body{
 
 
 footer{
-    background: #2193b0;
+    background: rgb(2, 23, 70);
 }
 
 
