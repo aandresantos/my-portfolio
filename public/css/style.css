@@ -1,3 +1,4 @@
+/* GLOBAL SCOPE*/
 *{
     padding: 0;
     margin: 0;
@@ -8,20 +9,36 @@ body{
     min-height: 100vh;
 }
 
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background:  transparent;
+}
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    border: 3px solid #001d35;
+    background:  #04165357;
+    width: 3px;
+   
+}
+
 /*header*/
 
 #fixedbar{
-    padding: 0;
+    padding: 0 !important;
     color: #001d35 !important;
-    background:transparent;
+    background:#001d356c;
 }
+
 #fixedbar ul li {
     padding: 10px;
     text-align: center;
     text-decoration: none;
     font-weight: 700;
     
-    color: #001d35 !important;
+ 
     transition: .30s;
 
 }
@@ -30,7 +47,8 @@ body{
     background: rgb(2, 23, 70);
 }
 #fixedbar a{
-    color: rgb(2, 23, 70) !important;
+    color: rgb(202, 203, 207) !important;
+    text-shadow: 1px 1px black;
 }
 #fixedbar ul li a:hover{
     color: azure !important;
@@ -53,9 +71,8 @@ body{
 /*banner*/
 #banner{
     position: relative;
-    margin-top: 11  vh;
-    padding: 30vh;
-    padding-bottom: 55vh;
+    padding: 20vh;
+    padding-bottom: 85vh;
     background: linear-gradient(45deg, #001E6C , #035397, #5089C6 ,rgb(247, 227, 116), #f0ffff);
     background-size: 300% 300%;
     animation: color-banner 10s ease infinite;
@@ -72,7 +89,92 @@ body{
     }
 }
 
+#banner .welcome{
+    position: absolute;
+    top:200px;
+    right: 30px;
+    left: 2%;
+}
+#banner .banner-svg img{
+    position: absolute;
+    left: 60%;
+    top: 200px;
+    justify-content: end;
+    text-align: end;
+    width: 30%;
+}
 
+
+#banner .welcome h1{
+    margin-top: 12vh;
+    font-size: 3em;
+    font-weight: 800;
+    color: rgb(232, 249, 255);
+    text-shadow: 1px 3px black;
+}
+#banner .welcome span{
+    
+    font-size:1em;
+    font-weight: 800;
+    color: rgb(255, 246, 122);
+    text-shadow: 1px 1px rgb(71, 43, 1);
+    text-transform: uppercase;
+}
+
+#banner .content-about{
+    margin-top: 10vh;
+    margin-left: 12.5%;
+}
+
+#banner .buttons-banner ul{
+    display: block;
+    margin-top: 10px;
+    display: flex;
+    letter-spacing: 2px;
+   
+}
+#banner .buttons-banner ul li{
+    display: flex;
+    margin-left: 3px;
+}
+
+#banner .buttons-banner ul li a{
+    padding: 20px; 
+    background: #07006398;
+    border:0;
+    border-radius: 10px;
+
+    letter-spacing: 3px;
+    font-size: 0.8em;
+    font-weight: 700;
+
+    transition: .50s;
+}
+#banner .buttons-banner ul li a:hover{
+    padding: 20px; 
+    background: #cacaca63;
+    color: rgb(8, 1, 46);
+    border:0;
+    border-radius: 10px;
+    border-radius: 15px;
+}
+#banner .thub ul{
+    margin-top: 20px;
+    display: flex;
+}
+#banner .thub ul li{
+    font-size: 30px;
+    margin-right: 20px;
+    display: flex;
+}
+#banner .thub ul li i{
+    color: rgb(255, 255, 255);
+    transition: .30s;
+}
+#banner .thub ul li i:hover{
+    color: rgb(255, 208, 0);
+}
+  
 
 
 
