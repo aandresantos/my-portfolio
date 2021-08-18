@@ -18,8 +18,7 @@ body{
 }
 ::-webkit-scrollbar-thumb{
     border-radius:10px;
-    border: 3px solid #001d35;
-    background:  #04165357;
+    background:  #044a5357;
     width: 3px;
    
 }
@@ -220,10 +219,12 @@ body{
 /*SOFT SKILLS*/
 
 #description-soft-skills{
-    padding:18px;
-    margin-bottom: 30px;
-    background: #021746;
+    margin-bottom:5%;
+    padding-top:2%;
+    padding-bottom: 8%;
+    background: #032670;
     background-clip: padding-box;
+    color: #032670;
   
     text-transform: uppercase;
     align-items: center;
@@ -251,14 +252,94 @@ body{
     font-weight: 600;
     align-items: center;
 
-    border-left: 3px solid #021746;
+    border-left: 3px solid #032670;
     border-radius: 3px;
 }
 
+/* IN TI*/
+#description-in-ti{
+    position: relative;
+    
+}
+#description-in-ti .circle{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    clip-path: circle(80% at right );
+    background: #f5f23a;
+    background-size: 400%;
+    animation: circle 30s ease-in-out infinite ;
+}
+@keyframes circle{
+    0%{
+        clip-path: circle(0%);
+    }
+    25%{
+        clip-path: circle(40%) ;
+    }
+    50%{
+        clip-path: circle(80%) ;
+    }
+    90%{
+        clip-path: circle(-80%);
+    }
+    100%{
+        clip-path: circle(-100%);
+    }
+}
+#description-in-ti img{
+    padding-top: 10px;
+}
+
+#description-in-ti .about-in-ti{
+    margin-top: 80px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+#description-in-ti .about-in-ti h2{
+    font-weight: 800;
+    font-size: 1.8em;
+}
 
 
+/*HARD-SKILLS*/
+#description-hard-skills{
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    
+}
+#description-hard-skills h2, h3{
+    font-size: 1.8em;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #035397;
+    text-align: center;
+}
 
+#description-hard-skills .col-6{
+    margin-top: 30px;
 
+    font-size: 1.2em;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   
+    left: 20% ;
+
+}
+#description-hard-skills .col-6 ul{
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px black;
+    background: rgb(21, 45, 110);
+    color: #f7f7ef;
+}
 
 
 
