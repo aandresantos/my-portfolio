@@ -353,6 +353,38 @@ body{
 
 
 /* Projects */
+#container-project{
+    background-image: url('../img/5a1c66190a1663.8506649715118105850413.png'),url('../img/5a1c66190a1663.8506649715118105850413.png'),url('../img/5a1c66190a1663.8506649715118105850413.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position:top ;
+    margin: 2vh;
+    margin-bottom: 8vh;
+    padding: 80px;
+    animation: boll-project 60s ease-in-out infinite;
+}
+@keyframes boll-project{
+    0%{
+        background-position:1 1 2;
+    }
+    50%{
+        background-position:  80px, 200px, -440px ;
+    }
+    100%{
+        background-position:  160px, 300px, -480px ;
+    }
+}
+#container-project h2{
+    font-weight: 700;
+    color: gold;
+    text-shadow: 0 1px 2px black;
+    text-transform: uppercase;
+}
+#container-project sub{
+    font-weight: 700;
+    color: rgb(2, 2, 46);
+    text-shadow: 0 1px 5px #f7f7ef;
+}
 #project{
     
     width: 500px;
@@ -375,12 +407,12 @@ body{
     transition: 0.5s ease-in-out;
 }
 #project .card01:hover, #project .card01:focus{
-    height: 420px;
+    height: 415px;
 }
 #project .card01 .imgBx{
     position:relative;
     width: 260px;
-    height: 260px;
+    height: 290px;
     cursor: pointer;       
     top:-60px;
     left: 5px;
@@ -402,19 +434,29 @@ body{
     color: #111;
 }
 #project .card01:hover .content,#project .card01:focus .content{
-
     margin-top: -40px;
     visibility: visible;
     opacity: 1;
     transition: 0.2s ease;
-    
 }
-
+#project ul{
+    margin-left: 5px;
+    padding-right: 22px;
+    display: flex;
+}
+#project ul li{
+    margin-right: 5px;
+}
+#project ul li a{
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 0.8em;
+}
 
 /* HIRE ME */
 #hire-me{
     padding: 8vh;
-    margin-bottom: 2vh;
+    
 }
 #hire-me .hire-me-title{
     text-align: center;
