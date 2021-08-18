@@ -54,7 +54,7 @@ body{
     color: azure !important;
 }
 #fixedbar .home{
-    background: rgb(2, 23, 70);
+    background: #021746;
     border-radius: 10px;
     color: azure !important;
 }
@@ -182,18 +182,15 @@ body{
   
 /*ABOUT ME*/
 #description-about-me{
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 
     background: rgb(255, 209, 4);
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-
+    border-bottom:1px solid rgb(255, 209, 4);
     position: relative;
 }
 
-#description-about-me {
-    ;
-}
 #description-about-me .about-me-svg img{
     width: 80vh;
     height: 80vh;
@@ -206,21 +203,57 @@ body{
 }
 
 #description-about-me .about-me{
-    align-items: center;
+    
     margin-top: 100px;
     padding-bottom: px;
 
     font-family: 'Mukta', sans-serif;
-    font-size: 1.5em;
-
+    font-size: 1.3em;
+    align-items: center;
     letter-spacing: 2px;
 }
 #description-about-me .about-me h2{
-    font-size: 1.7em;
+    font-size: 1.9em;
+    font-weight: 900;
 }
 
+/*SOFT SKILLS*/
 
+#description-soft-skills{
+    padding:18px;
+    margin-bottom: 30px;
+    background: #021746;
+    background-clip: padding-box;
+  
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+#description-soft-skills .row{
+    padding:8vh;
+    background: #f7f7ef;
+    border-radius: 5px;
+}
 
+#description-soft-skills h2{
+    padding-bottom: 10px;
+    text-align: end;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    align-items: center;
+}
+#description-soft-skills ul{
+    padding-bottom: 10px;
+    text-align: start;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    align-items: center;
+
+    border-left: 3px solid #021746;
+    border-radius: 3px;
+}
 
 
 
