@@ -309,16 +309,23 @@ body{
 #description-hard-skills{
     position: relative;
     margin-top: 150px;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
     
 }
-#description-hard-skills h2, h3{
+#description-hard-skills h2{
     font-size: 1.8em;
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 10px;
     border-bottom: 2px solid #035397;
+    text-align: center;
+}
+#description-hard-skills h3{
+    font-size: 1.8em;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    padding-bottom: 2px;
     text-align: center;
 }
 
@@ -330,28 +337,135 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
    
-    left: 20% ;
+    left: 18% ;
 
 }
 #description-hard-skills .col-6 ul{
-    padding: 90px;
+    padding: 23% !important;
     border-radius: 10px;
     box-shadow: 1px 2px 5px black;
-    background: rgb(21, 45, 110);
+    background: #152d6e;
     color: #f7f7ef;
 }
 
 
 
+/* HIRE ME */
+#hire-me{
+    padding: 8vh;
+    margin-bottom: 2vh;
+}
+#hire-me .hire-me-title{
+    text-align: center;
+    margin-top:100px;
+}
+#hire-me .hire-me-title h2{
+    font-weight: 700;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 5px;
 
+    text-align: end;
+    color: #03195f;
+    border-bottom: 7px solid #f7f7ef;
+    border-right: 7px solid #f7f7ef;
+    animation: bottom-border 10s ease-in infinite;
 
+    transition: 2s;
+}
+@keyframes bottom-border{
+    0%{
+        border-color:#001d35;
+    }
+    25%{
+        border-color:#21537c;
+    }
+    50%{
+        border-color:#eff8ff;
+    }
+    50%{
+        border-color:#5283ac;
+    }
+    100%{
+        border-color:#00223b;
+    }
+}
+#hire-me .col{
+    margin-bottom: 200px;
+   
+}
+#hire-me .card{
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    
+    bottom:74px;
+    margin-right: 10%;
+    margin-left: 8px;
+    padding:35.5px;
+    border:0;
+    border-radius: 0;
 
+    transition: 1s;
+}
+#hire-me .card:hover{
+   margin-right: 20%;
+}
 
+#hire-me .email{
+    background:#152d6e !important;
+    color:#f7f7ef;
+}
+#hire-me .cv{
+    background:#4460ac !important;
+    color:#f7f7ef;
+}
+#hire-me .social{
+    background:#2624a3 !important;
+    color:#f7f7ef;
+}
+#hire-me .social ul{
+    display: flex;
+    font-size: 2em;
+    text-align: center;
+    color:#f7f7ef;
+}
+#hire-me .social ul li{
+    text-align: center;
+    margin-left: 16%;
+   
+    color:#f7f7ef;
+}
+#hire-me .social ul li a{
 
+    text-align: center;
+   
+    
+    color:#f7f7ef;
+}
+#hire-me .social ul li a i{
+    margin-left: 10px;
+    color:#f7f7ef;
+    transition: 1s;
+}
+#hire-me .social ul li a i:hover{
+    margin-left: 10px;
+    color:#fff066;
+}
+#hire-me .email h3{
+  
+}
+.circle2{
+    position: absolute;
 
-
-
-
+    height: 50%;
+    width: 51%;
+    
+    clip-path:polygon(100%);
+    background: #fff066;
+    
+    animation: circlea 30s ease-in-out infinite ;
+}
 
 
 
@@ -374,6 +488,7 @@ body{
 
 
 footer{
+    
     background: rgb(2, 23, 70);
 }
 
