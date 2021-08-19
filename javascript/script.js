@@ -40,7 +40,7 @@ function getScrollHref(element){
 
 function scrollForClick(event){
   event.preventDefault();
-  const to = getScrollHref(event.target) -16;
+  const to = getScrollHref(event.target) -15;
 
   scrollToPosition(to)
 }
@@ -67,7 +67,7 @@ function getScrollHrefBanner(element){
 
 function scrollForClickBanner(event){
   event.preventDefault();
-  const to = getScrollHrefBanner(event.target) - 16;
+  const to = getScrollHrefBanner(event.target) - 15;
 
   scrollToPositionBanner(to)
 }
