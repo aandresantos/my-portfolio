@@ -12,6 +12,23 @@ body{
     padding: 0;
 }
 
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime= "left" ]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime= "right" ]{
+    transform: translate3d(-90px, 0, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 ::-webkit-scrollbar{
     width: 12px;
 }
@@ -134,7 +151,6 @@ body{
 }
 
 #banner .buttons-banner ul{
-    display: block;
     margin-top: 10px;
     display: flex;
     letter-spacing: 2px;
@@ -185,7 +201,7 @@ body{
 /*ABOUT ME*/
 #description-about-me{
     margin-bottom: 30px;
-
+    padding:8%;
     background: rgb(255, 209, 4);
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -194,13 +210,13 @@ body{
 }
 
 #description-about-me .about-me-svg img{
-    width: 80vh;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     background: #f7f7ef;
     border-radius: 10px;
 
     position:inherit;
-    left: 40.4%;
+    left: 25%;
     align-items: center;
 }
 
@@ -215,6 +231,22 @@ body{
     letter-spacing: 2px;
 }
 #description-about-me .about-me h2{
+    font-size: 1.9em;
+    font-weight: 900;
+}
+
+
+#description-about-me .about-me2{
+    display: none;  
+    margin-top: 100px;
+    padding-bottom: px;
+
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.3em;
+    align-items: center;
+    letter-spacing: 2px;
+}
+#description-about-me .about-me2 h2{
     font-size: 1.9em;
     font-weight: 900;
 }
@@ -293,6 +325,7 @@ body{
     }
 }
 #description-in-ti img{
+    height: 85%;
     padding-top: 10px;
 }
 
@@ -354,14 +387,14 @@ body{
 
 /* Projects */
 #container-project{
-    background-image: url('../img/5a1c66190a1663.8506649715118105850413.png'),url('../img/5a1c66190a1663.8506649715118105850413.png'),url('../img/5a1c66190a1663.8506649715118105850413.png');
-    background-repeat: repeat-y;
+    background-image: url('../figures/5a1c66190a1663.8506649715118105850413.png');
     background-size: cover;
     background-position:top ;
     margin: 2vh;
     margin-bottom: 8vh;
     padding: 80px;
     animation: boll-project 60s ease-in-out infinite;
+    
 }
 @keyframes boll-project{
     0%{
@@ -387,12 +420,13 @@ body{
 }
 #project{
     
-    width: 500px;
+    width: 115%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding:30px;
-    margin-left: 2%;
+    padding:10px;
+    
+    
 }
 #project .card01{
     position: relative;
@@ -420,7 +454,7 @@ body{
     z-index: 1;
 }
 #project .card01 .imgBx img{
-    max-width: 100%;
+    width: 100%;
     border-radius: 4px;
  }
 #project .card01 .content{
@@ -455,12 +489,13 @@ body{
 
 /* HIRE ME */
 #hire-me{
-    padding: 8vh;
-    
+    margin-right: 20px;
 }
 #hire-me .hire-me-title{
     text-align: center;
-    margin-top:100px;
+    margin-top:8%;
+    margin-left:12%;
+    
 }
 #hire-me .hire-me-title h2{
     font-weight: 700;
@@ -492,17 +527,13 @@ body{
         border-color:#00223b;
     }
 }
-#hire-me .col{
-    margin-bottom: 200px;
-   
-}
+
 #hire-me .card{
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
     
-    bottom:74px;
     margin-right: 10%;
     margin-left: 8px;
     padding:35.5px;
@@ -512,7 +543,7 @@ body{
     transition: 1s;
 }
 #hire-me .card:hover{
-   margin-right: 20%;
+   margin-right: 20% !important;
 }
 
 #hire-me .email{
@@ -532,10 +563,11 @@ body{
     font-size: 2em;
     text-align: center;
     color:#f7f7ef;
+    padding-left: 29% ;
 }
 #hire-me .social ul li{
     text-align: center;
-    margin-left: 16%;
+    
    
     color:#f7f7ef;
 }
@@ -555,24 +587,70 @@ body{
     margin-left: 10px;
     color:#fff066;
 }
-#hire-me .email h3{
-  
-}
-.circle2{
-    position: absolute;
 
-    height: 50%;
-    width: 51%;
+/*Responsive*/
+
+@media (max-width: 1000px){
+    #banner {
+        right: 0 auto;
+        left: 0 auto;
+    }
+    #banner .content-about{
+        margin-top: 10vh;
+        margin-left:0;
+    }
+    #banner img{
+        padding-top: 60px;
+        padding-left: 60px;
+    }
+
+    #description-about-me .about-me,#description-about-me .about-me-svg{
+        display: none;
+    }
+
+    #description-about-me .about-me2{
+        display: block;
+    }
+    #description-about-me .about-me2 img{
+       width: 100%;
+    }  
     
-    clip-path:polygon(100%);
-    background: #fff066;
     
-    animation: circlea 30s ease-in-out infinite ;
+    #description-in-ti img{
+        display: none;
+    }
+
+    #description-hard-skills .col-6{
+        left: 0;
+    }
+    #description-hard-skills h3{
+        font-size:1.1em
+    }
+
+
+    #container-project{
+        margin: 0 ;
+    }
+    #project .card01{
+        margin-top: 30px ;
+        margin-right: 0 !important;
+        padding:20px 15px;
+    }
+    #project{
+        width: 115%;
+        padding:0 ;
+        
+    }
+    
+    #hire-me{
+        margin: 0 auto;
+    }
+    #hire-me .card{
+        margin: 0 ;
+        transition: 1.2s;
+    }
 }
-
-
-
-
+ 
 
 
 
@@ -591,7 +669,7 @@ body{
 
 
 footer{
-    
+    margin-top: 5vh;
     background: rgb(2, 23, 70);
 }
 
