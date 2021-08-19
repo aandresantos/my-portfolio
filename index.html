@@ -43,33 +43,33 @@
 </head>
 <body>
    <header>
-        <nav id="fixedbar" class="navbar fixed-top navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="./index.html"><img src="./public/figures/logo.svg" alt="" width="120%" height="90 " id="logo"class="d-flex align-text-top"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item home" >
-                        <a class="nav-link" href="#" >HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id=""class="nav-link" href="#">ABOUT ME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="" class="nav-link" href="#">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a id="" class="nav-link" href="#">HIRE ME</a>
-                  </li>
-                </ul>
-            </div>
-        </nav>
-     </header>
+      <nav id="fixedbar" class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="./index.html"><img src="./public/figures/logo.svg" alt="" width="120%" height="90 " id="logo"class="d-flex align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item home" >
+                <a class="nav-link" href="./index.html" >HOME</a>
+              </li>
+              <li class="nav-item">
+                <a id=""class="nav-link" href="#description-about-me">ABOUT ME</a>
+              </li>
+              <li class="nav-item">
+                <a id="" class="nav-link" href="#container-project">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a id="#hire-me" class="nav-link" href="#hire-me">HIRE ME</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
 
     <section>
       <div  id="banner">
-        <div class="welcome">
+        <div class="welcome animate" data-anime="right">
           <div class="container">
             <h1>WELCOME <br>TO MY<br> PORTFOLIO</h1>
             <span>André Luciano - Dev. Front-End Jr </span>
@@ -79,9 +79,9 @@
               <div class="col-11">
                 <div class="buttons-banner">
                   <ul>
-                    <li><a href="" class="btn btn-primary">MEET ANDRÉ</a></li>
-                    <li><a href="" class="btn btn-primary">VIEW PROJECTS</a></li>
-                    <li><a href="" class="btn btn-primary">TO HIRE</a></li>
+                    <li><a href="#description-about-me" class="btn btn-primary">MEET ANDRÉ</a></li>
+                    <li><a href="#container-project" class="btn btn-primary">VIEW PROJECTS</a></li>
+                    <li><a href="#hire-me" class="btn btn-primary">TO HIRE</a></li>
                   </ul>
                 </div>
               </div>
@@ -96,7 +96,7 @@
               </div>
             </div>
           </div>  
-        <div class="banner-svg">
+        <div class="banner-svg" >
           <img src="./public/figures/undraw_dev_productivity_umsq.svg" alt="">
         </div>  
       </div>
@@ -105,8 +105,8 @@
     
 
   <!--Descripton about me-->
-    <section id="description-about-me" data-anime="left">
-      <div class="container">
+    <section id="description-about-me">
+      <div class="container animate" data-anime="left">
         <div class="row">
           <div class="col about-me">
             <h2>About</h2>
@@ -120,14 +120,14 @@
           </div>
       </div>
     </section>
-    <section id = "description-soft-skills" data-anime="left">
-      <div class="container">
+    <section id = "description-soft-skills">
+      <div class="container animate" data-anime="left">
         <div class="row">
           <div class="col">
               <h2>Some soft<br><i class="fas fa-minus"></i>  skills</h2>
           </div>
           <div class="col">
-            <ul>
+            <ul id="ul-soft-skills" class="animate" data-anime="left">
               <li>Focus;</li>
               <li>Persistence;</li>
               <li>Dedication;</li>
@@ -141,7 +141,7 @@
       </div>
     </section>
     
-    <section id="description-in-ti" data-anime="left">
+    <section id="description-in-ti">
       <div class="circle"></div>
       <div class="container">
         <div class="row">
@@ -155,7 +155,7 @@
           </div>
         </div>
     </section>
-    <section id = "description-hard-skills" data-anime="left">
+    <section id = "description-hard-skills">
       <div class="container">
         <div class="row">
           <h2>Tools that André has already used</h2>
@@ -264,12 +264,12 @@
 
   <!--HIRE ME-->
       <section>
-        <div class="circle2"></div>
-        <div id="hire-me">
+        <div class="circle2 animate" data-anime="left"></div>
+        <div id="hire-me" class="animate" data-anime="right">
           <div class="container" >
             <div class="row">
               <div class="col-6 hire-me-title">
-                <h2 s>HIRE ME</h2>
+                <h2>HIRE ME</h2>
               </div>
               <div class="col">
                 <div class="card email">
@@ -338,7 +338,7 @@
         </section>
     </footer>
   <!-- Footer -->
-  <script src="./javascript/script.js"></script>
+  <script src="../myportfolio-new/javascript/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
